@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  .glass-effect-dark {
+    background: rgba(28, 25, 23, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #78350f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-emerald {
+    background: linear-gradient(135deg, #059669 0%, #047857 50%, #065f46 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-premium {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #475569 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .shadow-premium {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  }
+
+  .shadow-luxury {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  }
+  
+  .shadow-hover {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .shadow-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Base style overrides for font and smoothness */
+* {
+  font-family: 'Vazirmatn', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Input reset for elegant borders */
+input, select, textarea {
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #10b981; /* Tailwind emerald-500 */
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}

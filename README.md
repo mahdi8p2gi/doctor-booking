@@ -1,87 +1,181 @@
-# 🩺 دکترینو VIP | سامانه لوکس نوبت‌دهی هوشمند پزشکان
-> **یک وب‌اپلیکیشن فرانت‌اند پرمیوم، مدرن و ریسپانسیو الهام‌گرفته از آرت‌ورک‌های Dribbble و Pinterest**
+🩺 Doktorino VIP
 
-وب‌اپلیکیشن **دکترینو** یک پلتفرم فوق‌مدرن و لوکس برای جستجو، مشاوره و رزرو نوبت آنلاین پزشکان متخصص و فوق‌تخصص کشور است. این پروژه با استفاده از جدیدترین تکنولوژی‌های روز فرانت‌اند طراحی شده و تمرکز بسیار بالایی روی زیبایی بصری، جزئیات UI/UX، انیمیشن‌های غنی و کارایی بالا دارد.
+<p align="center">
+  <strong>Premium Medical Appointment Platform</strong>
+</p><p align="center">
+  Modern healthcare experience powered by AI, crafted with React 19, TypeScript and Framer Motion.
+</p><p align="center">
+  <img src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4.x-38BDF8?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Framer_Motion-Latest-black?style=for-the-badge" />
+</p>---
 
----
+✨ Overview
 
-## 💎 ویژگی‌های شاخص پروژه (Key Features)
+Doktorino VIP is a modern doctor booking platform focused on delivering a premium healthcare experience.
 
-### ۱. انیمیشن‌های غنی و لودر پرمیوم (Preloader & Micro-interactions)
-* **لودر آغازین نئونی (ECG Glow Preloader):** انیمیشن خیره‌کننده با پس‌زمینه تیره اشرافی، ذرات معلق نورانی متحرک، رینگ پیشرفت دایره‌ای درخشان هماهنگ با لودینگ، و ترسیم انیمیت‌شده نوار ضربان قلب (ECG) به صورت زنده.
-* **انیمیشن‌های Framer Motion:** ورود نرم و زمان‌بندی‌شده کارت‌ها (Staggered Fade-in)، هاورهای سه‌بعدی شناور، و اسلاید روان پرسش‌های متداول (FAQs) با افکت‌های فیزیکال جذاب.
-
-### ۲. چت‌بات تشخیصی و تریاژ پزشکی (Smart Clinical Chatbot)
-* **تحلیل هوشمند پیام بیمار:** پردازش متنی کلمات کلیدی فارسی مربوط به علائم بیماری‌ها (قلبی، پوستی، عصبی، روانی، بارداری، اطفال و عمومی).
-* **پاسخ‌های تریاژ بالینی واقعی:** ارائه توصیه‌های خودمراقبتی استاندارد، هشدارهای حیاتی اورژانسی (مانند زنگ خطر درد قفسه سینه) و معرفی فوری بهترین پزشک فوق‌تخصص مرتبط با آن علائم همراه با قابلیت تغییر خودکار پزشک در صفحه گفتگو.
-
-### ۳. سیستم نوبت‌دهی چندمرحله‌ای دیجیتال (`BookingModal`)
-* **تقویم شفاف هفتگی:** نمایش روزها و ساعت‌های خالی پزشک در قالب کارت‌های شیک Dribbble-style.
-* **ثبت مشخصات با کد ملی:** جمع‌آوری اطلاعات بیمار، کدهای بیمه پایه و تکمیلی جهت یکپارچه‌سازی نسخه الکترونیک.
-* **کارت نوبت VIP:** صدور آنی بلیت دیجیتال مراجعین مجهز به **بارکد اختصاصی**، شماره رهگیری، اطلاعات کامل کلینیک و قابلیت **چاپ فیزیکی نوبت (Print View)**.
-
-### ۴. سیستم نظرات و کامنت‌گذاری پویا (Interactive Rating System)
-* امکان ثبت نظر واقعی توسط مراجعین به همراه ثبت ستاره، نام و نوع درمان در صفحه هر پزشک.
-* **محاسبه آنی میانگین امتیازات:** به محض ثبت کامنت جدید، تعداد کل نظرات، میانگین ستاره‌های پزشک و درصد رضایتمندی بیماران مجدداً فرمول‌نویسی شده و به صورت زنده در سراسر وب‌سایت آپدیت می‌شود.
-
-### ۵. مجله سلامت تعاملی (Interactive Health Magazine)
-* مقالات کامل، آموزنده و پرمحتوا در حوزه‌های تخصصی بهداشت و سلامت.
-* **نمای مطالعه لوکس (Reading View):** باز شدن مقالات با افکت پینترست، پایش زمان مطالعه و سیستم فیدبک تعاملی «آیا مفید بود؟».
-
-### ۶. بهبود دسترسی تصاویر و کارکرد بی‌نقص در ایران:
-* استفاده از سرورهای اختصاصی **Freepik** و تصاویر پرتره رسمی پزشکان و مقالات جهت اطمینان از سرعت لود فوق‌العاده بالا و عدم فیلتر بودن در بستر اینترنت کشور.
+Features include intelligent doctor discovery, AI-powered symptom analysis, appointment booking, interactive health content, and a luxury user experience inspired by modern SaaS products.
 
 ---
 
-## 🛠️ تکنولوژی‌های استفاده شده (Tech Stack)
+🚀 Features
 
-* **React 19 & TypeScript:** برای توسعه باثبات، نوع‌داده‌های قوی و مدیریت عالی کامپوننت‌ها.
-* **Tailwind CSS:** پیاده‌سازی گریدها، افکت‌های Glassmorphism شخصی‌سازی‌شده و کلاس‌های استایل دهی مدرن.
-* **Framer Motion:** روح بخشیدن به صفحات با انیمیشن‌های فیزیکال، ورودهای نرم و ترنزیشن‌های تب‌ها.
-* **Lucide React:** آیکون‌های وکتور خطی، بسیار شیک و یکپارچه.
-* **LocalStorage Synchronization:** همگام‌سازی دائمی نشست‌های کاربر، علاقه‌مندی‌ها و نوبت‌های رزرو شده.
+🧠 AI Medical Assistant
+
+- Symptom analysis
+- Department recommendation
+- Urgency detection
+- Emergency alerts
+- Smart doctor suggestions
+
+📅 Appointment Booking
+
+- Doctor selection
+- Time slot management
+- Insurance information
+- Digital appointment ticket
+- QR Code generation
+- Printable reservation card
+
+👨‍⚕️ Doctor Profiles
+
+- Biography
+- Education
+- Certificates
+- Experience
+- Ratings & Reviews
+- Availability schedule
+
+⭐ Review System
+
+- Doctor ratings
+- Patient reviews
+- Live score calculation
+- Satisfaction analytics
+
+📚 Health Magazine
+
+- Medical articles
+- Reading progress tracking
+- Reading time estimation
+- User feedback
+
+🔔 Smart Notifications
+
+- Booking alerts
+- Authentication feedback
+- Reminder notifications
+- Error handling
 
 ---
 
-## 📂 ساختار فایل‌های پروژه (Project Structure)
+🎨 UI Highlights
 
-```bash
-├── src
+- ECG Neon Preloader
+- Glassmorphism Components
+- Premium Dark & Light Themes
+- Smooth Page Transitions
+- Advanced Micro-interactions
+- Responsive Design
+- Framer Motion Animations
+
+---
+
+🏗️ Project Structure
+
+src
+├── app
+│   ├── providers
+│   ├── router
+│   └── store
+
+├── features
+│   ├── auth
+│   ├── booking
+│   ├── chatbot
+│   ├── doctors
+│   ├── magazine
+│   ├── notifications
+│   └── reviews
+
+├── layouts
+
+├── pages
+
+├── shared
 │   ├── components
-│   │   ├── AuthModal.tsx       # مودال سه وضعیتی ورود، ثبت‌نام و بازیابی رمز
-│   │   ├── BookingModal.tsx    # پروسه رزرو نوبت، دریافت اطلاعات و چاپ بلیت
-│   │   ├── DoctorCard.tsx      # کارت‌های مدرن پزشکان (Dribbble Style)
-│   │   ├── Header.tsx          # هدر ریسپانسیو و لوکس با ناوبری چندصفحه‌ای
-│   │   └── Notification.tsx    # نوتیفیکیشن‌های شناور هوشمند (Toast Alerts)
-│   ├── data
-│   │   └── doctors.ts          # دیتابیس جامع و غنی پزشکان و دسته‌بندی‌ها
+│   ├── hooks
 │   ├── utils
-│   │   └── chatbot.ts          # موتور پردازش علائم و پاسخ‌دهی هوشمند درمانی
-│   ├── App.tsx                 # هسته مرکزی ناوبری، مدیریت استیت و صفحات
-│   ├── index.css               # استایل‌های پایه و افکت‌های شیشه‌ای لوکس
-│   └── main.tsx                # نقطه ورود اپلیکیشن
-├── index.html                  # بهینه‌سازی فونت وزیرمتن و تنظیمات راست‌چین
-└── package.json
-```
+│   ├── constants
+│   └── types
+
+├── assets
+
+└── main.tsx
 
 ---
 
-## 💻 راهنمای اجرا در محیط توسعه (Local Development)
+🛠 Tech Stack
 
-۱. نصب وابستگی‌ها و پکیج‌های پروژه:
-```bash
+Frontend
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+State Management
+
+- Redux Toolkit
+- React Context
+
+Forms & Validation
+
+- React Hook Form
+- Zod
+
+---
+
+⚡ Getting Started
+
+Install dependencies:
+
 npm install
-```
 
-۲. اجرای پروژه در حالت توسعه (Local server):
-```bash
+Run development server:
+
 npm run dev
-```
 
-۳. ساخت خروجی نهایی بهینه‌شده جهت هاستینگ:
-```bash
+Build for production:
+
 npm run build
-```
+
+Preview production build:
+
+npm run preview
 
 ---
-💎 طراحی شده با عشق و الهام از برترین الگوهای بصری **Dribbble** و **Pinterest** برای مراجعین خاص کشور.
+
+🗺 Roadmap
+
+- [x] Landing Page
+- [x] Doctor Directory
+- [x] Appointment Booking
+- [x] Review System
+- [x] Health Magazine
+- [ ] Authentication
+- [ ] Online Payments
+- [ ] Video Consultation
+- [ ] AI Assistant (LLM)
+- [ ] Mobile Application
+
+---
+
+💎 Design Philosophy
+
+Healthcare should feel modern, accessible and trustworthy.
+
+Doktorino VIP combines technology, design and user experience into a seamless healthcare journey.
